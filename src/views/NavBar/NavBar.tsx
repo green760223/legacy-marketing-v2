@@ -1,28 +1,52 @@
-import { useState } from "react"
-import { Menu, MenuItem } from "@/components/ui/narbar-menu"
-import { cn } from "@/lib/utils"
-
-const NavBar = ({ className }: { className?: string }) => {
-  const [active, setActive] = useState<string | null>(null)
-
+const NavBar = () => {
   return (
-    <div
-      className={cn("fixed inset-x-0 max-w-7xl mx-auto z-50 top-5", className)}>
-      <Menu setActive={setActive}>
-        <div className=' flex justify-between items-center w-full h-10 text-xl mr-10'>
+    <>
+      <header className='fixed top-0 z-50 flex h-16 w-full items-center bg-background md:px-6 pt-8'>
+        <div className='flex w-full justify-between items-center'>
           <div>
-            <h1>
-              <a href=''>logo</a>
-            </h1>
+            <a
+              href='#'
+              className='flex items-center gap-2 text-lg font-semibold md:text-base'>
+              <img
+                src='/src/assets/Logo.png'
+                alt='Logo'
+                className='h-10 w-40 m-4'
+              />
+              <span className='sr-only'>Legacy Event</span>
+            </a>
           </div>
-          <div className='flex space-x-12'>
-            <MenuItem setActive={setActive} item='Services' />
-            <MenuItem setActive={setActive} item='Products' />
-            <MenuItem setActive={setActive} item='Pricing' />
-          </div>
+
+          <div></div>
+          <nav className='flex gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6'>
+            <a
+              href='#'
+              className='text-muted-foreground transition-colors hover:text-foreground'>
+              Dashboard
+            </a>
+            <a
+              href='#'
+              className='text-muted-foreground transition-colors hover:text-foreground'>
+              Orders
+            </a>
+            <a
+              href='#'
+              className='text-muted-foreground transition-colors hover:text-foreground'>
+              Products
+            </a>
+            <a
+              href='#'
+              className='text-muted-foreground transition-colors hover:text-foreground'>
+              Customers
+            </a>
+            <a
+              href='#'
+              className='text-foreground transition-colors hover:text-foreground'>
+              Settings
+            </a>
+          </nav>
         </div>
-      </Menu>
-    </div>
+      </header>
+    </>
   )
 }
 
