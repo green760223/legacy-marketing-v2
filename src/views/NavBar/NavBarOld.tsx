@@ -3,7 +3,7 @@ import { Menu, MenuItem } from "@/components/ui/narbar-menu"
 import { cn } from "@/lib/utils"
 
 const NavBar = ({ className }: { className?: string }) => {
-  const [active, setActive] = useState<string | null>(null)
+  const [_active, setActive] = useState<string | null>(null)
 
   return (
     <div
