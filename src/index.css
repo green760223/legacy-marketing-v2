@@ -65,5 +65,15 @@
   }
   body {
     @apply bg-background text-foreground;
+    @apply font-etline;
   }
+}
+
+@font-face {
+  font-family: "et-line";
+  src: url("/src/assets/fonts/et-line.woff2") format("woff2"),
+    url("/src/assets/fonts/et-line.woff") format("woff"),
+    url("/src/assets/fonts/et-line.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }

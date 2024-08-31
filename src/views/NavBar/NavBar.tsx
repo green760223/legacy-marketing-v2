@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <>
-      <header className='fixed top-0 z-50 flex h-16 w-full items-center bg-background md:px-6 pt-8'>
+      <header className='fixed top-0 z-50 flex h-16 w-full items-center bg-background md:px-16 pt-8'>
         <div className='flex w-full justify-between items-center'>
           <div>
             <a
@@ -20,28 +20,28 @@ const NavBar = () => {
           <nav className='flex gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6'>
             <a
               href='#'
-              className='text-muted-foreground transition-colors hover:text-foreground'>
-              Dashboard
+              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
+              HOME
             </a>
             <a
               href='#'
-              className='text-muted-foreground transition-colors hover:text-foreground'>
-              Orders
+              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
+              ABOUT
             </a>
             <a
               href='#'
-              className='text-muted-foreground transition-colors hover:text-foreground'>
-              Products
+              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
+              SERVICES
             </a>
             <a
               href='#'
-              className='text-muted-foreground transition-colors hover:text-foreground'>
-              Customers
+              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
+              HOSTS
             </a>
             <a
               href='#'
-              className='text-foreground transition-colors hover:text-foreground'>
-              Settings
+              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
+              CONTACT
             </a>
           </nav>
         </div>

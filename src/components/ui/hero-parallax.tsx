@@ -40,7 +40,7 @@ export const HeroParallax = ({
     springConfig
   )
   const opacity = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [0.2, 1]),
+    useTransform(scrollYProgress, [0, 0.1], [0.2, 1]),
     springConfig
   )
   const rotateZ = useSpring(
@@ -48,7 +48,7 @@ export const HeroParallax = ({
     springConfig
   )
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 250]),
+    useTransform(scrollYProgress, [0, 0.2], [-800, 50]),
     springConfig
   )
   return (
@@ -100,12 +100,12 @@ export const Header = () => {
   return (
     <div className='max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0'>
       <h1 className='text-2xl md:text-7xl font-bold dark:text-white'>
-        The Ultimate <br /> development studio
+        Your Event, Our Magic <br /> Creating Your Legacy
       </h1>
       <p className='max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200'>
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+        At Legacy Event, our expertise in marketing and event planning ensures
+        your event shines brilliantly. With personalized solutions and a focus
+        on creativity and detail, we bring your vision to life.
       </p>
     </div>
   )
