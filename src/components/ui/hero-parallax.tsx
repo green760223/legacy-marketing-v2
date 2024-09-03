@@ -19,6 +19,7 @@ export const HeroParallax = ({
   const firstRow = products.slice(0, 5)
   const secondRow = products.slice(5, 10)
   const thirdRow = products.slice(10, 15)
+  const fourthRow = products.slice(15, 20)
   const ref = React.useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -73,7 +74,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className='flex flex-row  mb-20 space-x-20 '>
+        <motion.div className='flex flex-row mb-20 space-x-20 '>
           {secondRow.map((product) => (
             <ProductCard
               product={product}
@@ -82,11 +83,20 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className='flex flex-row-reverse space-x-reverse space-x-20'>
+        <motion.div className='flex flex-row-reverse space-x-reverse space-x-20 mb-20'>
           {thirdRow.map((product) => (
             <ProductCard
               product={product}
               translate={translateX}
+              key={product.title}
+            />
+          ))}
+        </motion.div>
+        <motion.div className='flex flex-row mb-20 space-x-20 '>
+          {fourthRow.map((product) => (
+            <ProductCard
+              product={product}
+              translate={translateXReverse}
               key={product.title}
             />
           ))}
@@ -98,14 +108,17 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className='max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0'>
-      <h1 className='text-2xl md:text-7xl font-bold dark:text-white'>
-        Your Event, Our Magic <br /> Creating Your Legacy
+    <div className='max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0 '>
+      <h1 className='mt-20 text-2xl md:text-7xl font-bold dark:text-white'>
+        <span className='leading-tight'>
+          Your Event, Our Magic <br />
+          We Creating Your Legacy
+        </span>
       </h1>
       <p className='max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200'>
-        At Legacy Event, our expertise in marketing and event planning ensures
-        your event shines brilliantly. With personalized solutions and a focus
-        on creativity and detail, we bring your vision to life.
+        Our expertise in marketing and event planning ensures your event shines
+        brilliantly. With personalized events and a focus on creativity and
+        detail, we bring your vision to life.
       </p>
     </div>
   )
