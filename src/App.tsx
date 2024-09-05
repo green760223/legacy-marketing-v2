@@ -1,5 +1,6 @@
 import NavBar from "./views/NavBar/NavBar"
 import Hero from "./views/Hero/Hero"
+import { Feature } from "./views/Feature/Feature"
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       {/* <NavBar className='dark' /> */}
       <NavBar />
       <Hero />
+      <Feature />
     </div>
   )
 }
