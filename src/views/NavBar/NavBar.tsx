@@ -20,28 +20,28 @@ const NavBar = () => {
           <nav className='flex gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6'>
             <a
               href='#'
-              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
-              HOME
+              className='text-md text-foreground transition-colors hover:text-foreground tracking-widest'>
+              首頁
             </a>
             <a
               href='#'
-              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
-              ABOUT
+              className='text-md text-foreground transition-colors hover:text-foreground tracking-widest'>
+              關於樂心
             </a>
             <a
               href='#'
-              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
-              SERVICES
+              className='text-md text-foreground transition-colors hover:text-foreground tracking-widest'>
+              服務項目
             </a>
             <a
               href='#'
-              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
-              HOSTS
+              className='text-md text-foreground transition-colors hover:text-foreground tracking-widest'>
+              成功案例
             </a>
             <a
               href='#'
-              className='text-lg text-foreground transition-colors hover:text-foreground tracking-widest'>
-              CONTACT
+              className='text-md text-foreground transition-colors hover:text-foreground tracking-widest'>
+              聯絡我們
             </a>
           </nav>
         </div>
