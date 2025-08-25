@@ -1,6 +1,7 @@
 import NavBar from "./views/NavBar/NavBar"
 import Hero from "./views/Hero/Hero"
 import { Feature } from "./views/Feature/Feature"
+import Clients from "./views/Clients/Clients"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <NavBar />
       <Hero />
       <Feature />
+      <Clients />
     </div>
   )
 }
